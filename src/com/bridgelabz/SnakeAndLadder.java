@@ -8,7 +8,7 @@ public class SnakeAndLadder {
         int position1 = 0;
         while (position1 < 100) {
             int dieRoll = rand.nextInt(6) + 1;
-            System.out.println("Dieroll is : " + dieRoll);
+            System.out.println("Die roll is : " + dieRoll);
             position1 += dieRoll;
             if (position1>100){
                 position1-=dieRoll;
@@ -23,7 +23,7 @@ public class SnakeAndLadder {
                     case 1:
                         System.out.println("Hurray ! You got Ladder. ");
                         int bonusRoll = rand.nextInt(6) + 1;
-                        System.out.println("Dieroll is " + bonusRoll);
+                        System.out.println("Die roll is " + bonusRoll);
                         position1 += bonusRoll;
                         System.out.println("Player position is : "+position1);
                         break;
